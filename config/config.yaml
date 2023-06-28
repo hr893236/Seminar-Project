@@ -1,0 +1,19 @@
+client:
+  send_time_interval: 10
+  client_data_file: "client_data.json"
+  client_log_file: "Client.log"
+server:
+  dropbox_upload_interval: 60
+  receive_buffer_size: 131072
+  received_server_data_json_file: "server_data.json"
+  data_summary_json_file: "summary.json"
+  statistical_analysis_file: "statistics.txt"
+  probabilistic_distribution_file: "distributions.txt"
+  server_log_file: "server.log"
+common:
+  encryption_key: 3
+  server_ip: '127.0.0.1'
+  server_port: 12345
+dropbox:
+  dropbox_access_token: 'please add access tocken of dropbox here'
+

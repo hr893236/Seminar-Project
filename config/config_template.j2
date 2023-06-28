@@ -1,0 +1,25 @@
+config = {
+    'client': {
+        'send_time_interval': {{ config.client.send_time_interval }},
+        'client_data_file': "{{ config.client.client_data_file }}",
+        'client_log_file': "{{ config.client.client_log_file }}"
+    },
+    'server': {
+        'dropbox_upload_interval': {{ config.server.dropbox_upload_interval }},
+        'receive_buffer_size': {{ config.server.receive_buffer_size }},
+        'received_server_data_json_file': "{{ config.server.received_server_data_json_file }}",
+        'data_summary_json_file': "{{ config.server.data_summary_json_file }}",
+        'statistical_analysis_file': "{{ config.server.statistical_analysis_file }}",
+        'probabilistic_distribution_file': "{{ config.server.probabilistic_distribution_file }}",
+        'server_log_file': "{{ config.server.server_log_file }}"
+    },
+    'common': {
+        'encryption_key': {{ config.common.encryption_key }},
+        'server_ip': "{{ config.common.server_ip }}",
+        'server_port': {{ config.common.server_port }}
+    },
+    'dropbox': {
+        'dropbox_access_token': "{{ config.dropbox.dropbox_access_token }}"
+    }
+}
+
